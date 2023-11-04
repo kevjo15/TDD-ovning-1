@@ -4,11 +4,13 @@ This solution contains two projects:
 - A C# class library project called `Skottår Kalkylator`
 - A NUnit test project called `Skottår Test` med `KalkylatorTests.cs`
 
-Both are targeting `net7.0`
+Båda använder `net7.0`
 
-## Before you start:
-- Do one task at a time. Try not to read ahead. The trick is to learn to work incrementally.
-- Test first!
+## Innan du börjar:
+- Gör ett steg/krav i taget.
+- Försök att inte läsa framåt.
+- Meningen är att lära sig att arbeta stegvis.
+- Testa först!
 
 ## Flöde
 1. Skriv ett failing test
