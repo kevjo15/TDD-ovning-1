@@ -10,19 +10,29 @@ namespace Skottår_Test
         }
 
         [Test]
-        public void IsLeap_ThrowsNotImplementedException()
+        public void ÄrSkottÅr_RetuneraTrue()
         {
             // Arrange
             int årAttKontrollera = 2024;
 
-            // Act and Assert
-            Assert.Throws<NotImplementedException>(() => År.ÄrSkottår(årAttKontrollera));
+            // Act
+            bool resultat = År.ÄrSkottår(årAttKontrollera);
+
+            // Assert
+            Assert.IsTrue(resultat);
         }
 
         [Test]
-        public void När_ÅrÄrDelbartMed400_ShouldReturnTrue()
+        public void GetDagNummer_ShouldReturnCorrectDayNumber()
         {
-            Assert.Pass();
+            // Arrange
+            DateTime förstaJanuari2023 = new DateTime(2023, 1, 1);
+
+            // Act
+            int dagNummer = År.GetDagNummer(förstaJanuari2023);
+
+            // Assert
+            Assert.AreEqual(1, dagNummer);
         }
     }
 }
